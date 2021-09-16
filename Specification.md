@@ -1,8 +1,8 @@
 Team git repository link: github.com/Zariphron/Team-10
 
 Members:
-Phuc Le - PhucLe01
-Kevin Campbell - Zariphron
+Phuc Le - PhucLe01,
+Kevin Campbell - Zariphron,
 Manh Dinh Vu - 
 
 # Use Case Description
@@ -11,22 +11,22 @@ Date: 09/15/21
 
 Product Name:
 
-Problem Statement:To help students study
+Problem Statement: To help students study
 
-Non-functional Requirements:Readable Font, Simple Layout, 
+Non-functional Requirements: Readable Font, Simple Layout, 
 
 # Use case 1: Generate flash cards
 ## Summary
  Input a markdown file and ouput flash cards.
 
 ## Actors
-	1.User
+	1. User
 
 ## Preconditions
 	*Is a markdown file
 	
 ## Triggers
- Select convert to flash cards
+	Select convert to flash cards
 
 ## Primary Sequence
 	1. Select option to convert to flash cards
@@ -171,12 +171,22 @@ Non-functional Requirements:Readable Font, Simple Layout,
 
 # Use case 8: 
 ## Summary
-
+ 
 
 ## Actors
-
+	1. 
 
 ## Preconditions
+	* 
+
+## Trigger
+	
+
+## Primary Sequence
+	1. 
+
+## Primary Postconditions
+	* 
 
 
 ## Triggers
