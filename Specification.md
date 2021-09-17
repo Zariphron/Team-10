@@ -3,13 +3,13 @@ Team git repository link: github.com/Zariphron/Team-10
 Members:
 Phuc Le - PhucLe01,
 Kevin Campbell - Zariphron,
-Manh Dinh Vu - 
+Manh Dinh Vu - ManhDinhVu 
 
 # Use Case Description
 
 Date: 09/15/21
 
-Product Name:
+Product Name: Milestone 1
 
 Problem Statement: To help students study
 
@@ -169,163 +169,237 @@ Non-functional Requirements: Readable Font, Simple Layout,
 ## Primary postconditions
 	Recipient has a copy of the notes
 
-# Use case 8: 
+# Use case 8: Create a pdf file of flash cards to print
 ## Summary
- 
+        Create a pdf file of flash cards to print
 
 ## Actors
-	1. 
+	1. User
+        2. The website 
 
 ## Preconditions
-	* 
+	* The user's account must have at least one flash card
 
 ## Trigger
-	
+	User presses on button "download flash cards" 
 
 ## Primary Sequence
-	1. 
+	1.User presses on button "download flash cards"
+        2.Web site create a pdf file and upload there all flash cards with questions and answers
+        3.Web site open a new tab and let the user download the file
+        4.User presses download, and get the pdf file 
 
 ## Primary Postconditions
-	* 
+	* User got a pdf file of all flash cards with questions and answers
+## Alternate Sequences
+        * The button to "download" should appear only when at least one flash cards were created
 
 
-## Triggers
+## Alternate Trigger
+        * No alternate trigger
 
 
-## Primary sequence
+## Alternate Postconditions
+        * No alternate postconditions
 
 
-## Primary postconditions
 
-
-# Use case 9: 
+# Use case 9:Change order of flash cards based on how often user got answer correct 
 ## Summary
+	Change order of flash cards based on how often user got answer correct
 
 
 ## Actors
-
+      1. User
+      2. The website
 
 ## Preconditions
-
-
+      *The user needs to have at least 3 flash cards on his account
+      *(optional) In settings user's account should have a checkbox "on" for this feature
 ## Triggers
-
+      * User checks the answer of a flash card
 
 ## Primary sequence
-
+      1.When the user checks the answer, there should be two buttons: "Got it right!" or "Got it wrong"
+      2.User pressed on one of the buttons
+      3.If the user pressed the "Got it right" button => count adds +1 to correct answers and shuffle the card at the end of the deck
+      4.If the user pressed the "Got it wrong" button => this card shuffles in the middle (between this card and the end) of the deck.
 
 ## Primary postconditions
+      * User's deck of flash cards shuffled according to on which button he/she pressed
+## Alternate Sequences
+      * If the user didn't press any of the buttons and flips the card back => do nothing
 
+## Alternate Trigger
+      * No alternate sequences
 
-# Use case 10: 
+## Alternate Postconditions
+      * No alternate postconditions
+
+# Use case 10: Find text 
 ## Summary
-
+      * A user who has logged in and entered a file can search text in that file.
 
 ## Actors
+      * User
 
 
 ## Preconditions
-
+      * The user has logged and entered a file.
 
 ## Triggers
-
+      * User selects “search” option.
 
 ## Primary sequence
-
+      1. System prompts the user to enter text.
+      2. System searches for the text in the file.
+      3. System shows matching results.
 
 ## Primary postconditions
+      The system displays a message that searching is completed.
+## Alternate Sequences
+      * The user-entered text does not exist.
+      1. The system displays a message that no matches were found.
+      2. The system prompts the user to enter a text that exists.
 
-
-# Use case 11: 
+# Use case 11: Rename files 
 ## Summary
-
+      * A user who has logged in and can rename any file. 
 
 ## Actors
-
+      1. Users
+      2. Preconditions
 
 ## Preconditions
-
+      * The user has logged in
 
 ## Triggers
-
+      * User selects “rename” option.
 
 ## Primary sequence
-
+      1. System shows files.
+      2. User selects a file and rename it.
+      3. System renames the file.
 
 ## Primary postconditions
+      * The system displays a message that the file was renamed.
+## Alternate Sequences
+      * The user entered an invalid name.
+      1. The system displays an error message to the user.
+      2. The system prompts the user to enter a valid name.
 
+# Use case 12: Track hours worked every day 
 
-# Use case 12: 
 ## Summary
-
+      A user who record of their worked, gain control of their time, and complete the tasks on time.      
 
 ## Actors
-
+      1. Professors
+      2. Students
 
 ## Preconditions
-
+      1. Users have their account
+      2. Users have logged in to the application
 
 ## Triggers
-
+      * Users selected in Time Management option, then users select in the Track hours function
 
 ## Primary sequence
+      1. System prompts users to click the start button.
+      2. Users click the start button to count time.
+      3. System gets the date of the calendar.
+      4. System begins to count time.
+      5. Custom stop counting time when they want.
+      6. System shows a record of users.
 
+## Alternate Postconditions
+      * Users see their records everyday
 
-## Primary postconditions
-
-
-# Use case 13: 
+# Use case 13: Visualize hours worked and projects
 ## Summary
-
+      A user wants to see their activities in a day, one month, or one year.
 
 ## Actors
-
+      1. Professors
+      2. Students
 
 ## Preconditions
-
+      1. Users have their account
+      2. Users have logged in the application
 
 ## Triggers
-
+      * Users selected in Time Management option, then users selected in Visualize hours function.
 
 ## Primary sequence
+      1. System prompt user click on which activities they want to see.
+      2. Users click on the activities they want.
+      3. System prompts users to select the date that they expect to see.
+      4. Users choose the date that they want.
+      5. System shows their record user want.
+      6. User back to the screen, and they will watch their record if they want.
+      7. User comes back to the main screen.
+
+## Alternate Postconditions
+      *  Users see their records
 
 
-## Primary postconditions
-
-
-# Use case 14: 
+# Use case 14: Visualize timeblocks (similar to day view on google calendar)
 ## Summary
-
+      * A user wants to see their activities in our calendar that they create by themselves.
 
 ## Actors
-
+      1. Professors
+      2. Students
 
 ## Preconditions
-
+      1. Users have their account
+      2. Users have logged in the application
+      3. User created a calendar
 
 ## Triggers
-
+      * Users selected in Time Management option Then users selected in Visualize timeblocks function
 
 ## Primary sequence
+      1. System prompt user click on which calendar user want to see.
+      2. Users click calendar
+      3. System shows the user a list of events in the calendar that the user created before.
+      4. User click an option of events which they want to see or click all event option.
+      5. System shows the user’s events to review.
+      6. User click exactly on an event.
+      7. User back the screen of choosing option screen or quit Visualize timeblocks function.
+
+## Alternate Postconditions
+      * Users see their notes on flash card
 
 
-## Primary postconditions
+# Use case 15: Create time blocks (using markdown)
 
-
-# Use case 15: 
 ## Summary
-
+      * A user wants to create some notes, aware and strategic of how they want to spend their time.
 
 ## Actors
-
+      1. Professors
+      2. Students
 
 ## Preconditions
-
+      1. Users have their account
+      2. Users have logged in to the application
 
 ## Triggers
+      * Users selected in Time Management option Then user selected in “create calendar” symbol on the top right.
 
 
 ## Primary sequence
+      1. System prompt user input the title of the event.
+      2. Users type the title.
+      3. System prompt user input more specific information for the event.
+      4. User writes notes down in the editor.
+      5. System prompt user input date time they want to save, also reminder every day or every week
+      6. User selects in the date-time.
+      7. User saves it.
+      8. System converts the file text under markdown editor (see use case “input a markdown file and output flash cards)
+      9. System attach this event on the calendar.
 
 
-## Primary postconditions
+
+
