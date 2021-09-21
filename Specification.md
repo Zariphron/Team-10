@@ -9,7 +9,7 @@ Manh Dinh Vu - ManhDinhVu
 
 Date: 09/15/21
 
-Product Name: Milestone 1
+Product Name: Simply Study
 
 Problem Statement: To help students study
 
